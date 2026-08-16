@@ -1,7 +1,12 @@
 from django.shortcuts import render
 
 
-# Create your views here.
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='home'),
+]
 
 def index(request):
     if request.method == "POST":
@@ -10,4 +15,4 @@ def index(request):
         subject = request.POST.get("subject")
         message = request.POST.get("message")
         # Handle message delivery or database saving here
-    return render(request, 'index.html')
+    return render(request, "index.html")
