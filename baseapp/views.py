@@ -1,18 +1,3 @@
-# from django.shortcuts import render
-
-
-# # Create your views here.
-
-# def index(request):
-#     if request.method == "POST":
-#         name = request.POST.get("name")
-#         email = request.POST.get("email")
-#         subject = request.POST.get("subject")
-#         message = request.POST.get("message")
-#         # Handle message delivery or database saving here
-#     return render(request, 'index.html')
-
-
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.contrib import messages
