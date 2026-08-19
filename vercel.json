@@ -2,21 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "portfolio/wsgi.py",
+      "src": "myportfolio/wsgi.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "public,max-age=31536000,immutable"
-      },
-      "continue": true
-    },
-    {
       "src": "/(.*)",
-      "dest": "portfolio/wsgi.py"
+      "dest": "myportfolio/wsgi.py"
     }
   ]
 }
