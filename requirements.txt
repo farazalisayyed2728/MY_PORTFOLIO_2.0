@@ -2,3 +2,15 @@ Django>=5.0
 asgiref
 sqlparse
 whitenoise
+Django==5.2.7
+gunicorn==25.3.0
+django-browser-reload==1.21.0
+django-tailwind==3.9.1
+pillow==11.3.0
+requests==2.31.0
+sqlparse==0.5.3
+tzdata==2025.2
+python-dotenv
+psycopg2-binary
+dj-database-url
+whitenoise==6.9.0
